@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.typekit.net/gvn0quw.css">
+	</head>
+	<body>	
+		<div id="blur-refresh-div">
+			<div id="please-refresh-div">Please Refresh The Page And Login</div>
+		</div>
+		<div id="blur-recipe-editing-div">
+			<div id="recipe-editing-div">
+				<textarea id="recipe-title-editing" rows="1">New Recipe</textarea>
+				<div id="recipe-date-editing">0000-00-00</div>
+				<div class="recipe-diet-editing-div">
+					<select id="recipe-diet-editing">
+						<option value="Keto">Keto</option>
+						<option value="Omnivorous">Omnivorous</option>
+						<option value="Vegetarian">Vegitarian</option>
+						<option value="Vegan">Vegan</option>
+					</select>
+				</div>
+				<textarea id="recipe-ingredients-editing" rows="10">Ingredients...</textarea>
+				<textarea id="recipe-instructions-editing" rows="20">Instructions...</textarea>
+				<div class="editing-buttons-div">
+					<div class="editing-submit-div">
+						<button class="editing-submit-button" id="editing-submit-button">Submit</button>
+					</div>
+					<div class="editing-delete-div">
+						<button class="editing-delete-button" id="editing-delete-button">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="blur-profile-editing-div">
+			<div id="profile-create-div">
+				<div style="font-size: 3em; color: black;">Create Account</div>
+				<div style="width: 100%;">
+					<label for="firstName">First Name: </label>
+					<input type="text" name="firstName" id="firstName">
+					<label for="lastName">Last Name: </label>
+					<input type="text" name="lastName" id="lastName">
+				</div>
+				<div style="width: 100%;">
+					<label for="emailCreateInput">Email: </label>
+					<input type="email" name="emailCreateInput" id="emailCreateInput">
+					<label for="passwordCreateInput">Password: </label>
+					<input type="password" name="passwordCreateInput" id="passwordCreateInput">
+				</div>
+				<div id="userExists" style="display: none;">User already exists.</div>
+				<div id="allFieldsRequiredCreate" style="display: none;">All Fields Must Be Filled Out.</div>
+				<div class="editing-buttons-div">
+					<div class="editing-submit-div">
+						<button class="editing-submit-button" id="create-submit-button">Create</button>
+					</div>
+					<div class="editing-delete-div">
+						<button class="editing-delete-button" id="create-cancel-button">Cancel</button>
+					</div>
+				</div>
+			</div>
+			<div id="profile-login-div">
+				<div style="font-size: 3em; color: black;">Login</div>
+				<div style="width: 100%;">
+					<label for="emailLogInInput">Email: </label>
+					<input type="email" name="emailLogInInput" id="emailLogInInput">
+					<label for="passwordLoginInput">Password: </label>
+					<input type="password" name="passwordLogInInput" id="passwordLogInInput">
+				</div>
+				<div id="userIncorrect" style="display: none;">Email or Password Incorrect</div>
+				<div id="allFieldsRequiredLogin" style="display: none;">All Fields Must Be Filled Out.</div>
+				<div class="editing-buttons-div">
+					<div class="editing-submit-div">
+						<button class="editing-submit-button" id="login-submit-button">Login</button>
+					</div>
+					<div class="editing-delete-div">
+						<button class="editing-delete-button" id="login-cancel-button">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-div">
+			<div class="header-inner-content">
+				<h1 id="heading">Just Give Me The Damn Recipe</h1>
+			</div>
+			<div class="profile-content-display-wrapper">
+				<div id="profile-name-div">Anonymous Person</div>
+				<div class="profile-nav-div">
+					<div class="profile-addedit-div">
+						<button id="profile-addview-button">Sign Up</button>
+					</div>
+					<div class="profile-loginout-div">
+						<button id="profile-loginout-button">Log In</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content-hider">
+			<br><br><br><br><br>
+			<div class="content-hider-text">Please Sign In</div>
+		</div>
+		<div class="main-content-wrapper">
+			<div class="recipe-previews-display-wrapper">
+				<div class="recipe-preview-nav-div">
+					<div class="preview-edit-div">
+						<button id="preview-edit-button">Edit</button>
+					</div>
+					<div class="split-border" style="width: 3px; height: 22px;"></div>
+					<div class="preview-add-div">
+						<button id="preview-add-button">Add</button>
+					</div>
+				</div>
+				<div id="previewListDiv">
+					<div class="recipe-preview-content-wrapper">
+						<div class="recipe-preview-title">Here's a Test Title</div>
+						<div class="recipe-preview-date">01/15/1998</div>
+						<div class="recipe-preview-diet">Vegetarian</div>
+					</div>
+					<div class="recipe-preview-content-wrapper">
+						<div class="recipe-preview-title">Here's a Test Title</div>
+						<div class="recipe-preview-date">01/15/1998</div>
+						<div class="recipe-preview-diet">Vegetarian</div>
+					</div>
+					<div class="recipe-preview-content-wrapper">
+						<div class="recipe-preview-title">Here's a Test Title</div>
+						<div class="recipe-preview-date">01/15/1998</div>
+						<div class="recipe-preview-diet">Vegetarian</div>
+					</div>
+				</div>
+			</div>
+			<!---<div class="split-border" style="width: 3px; height: 100%;">   </div>---!>
+			<div id="recipe-full-display-wrapper">
+				<div class="recipe-display-header-div">
+					<div id="recipe-display-title-div">Default Title</div>
+					<div id="recipe-display-date-created-div">Edited: 01/15/1998</div>
+					<div id="recipe-display-diet-div">Vegan</div>
+				</div>
+				<div class="recipe-display-body-container">
+					<div class="recipe-display-ingredients-div">
+						<textarea id="recipe-display-ingredients-textarea" readonly>Ingredients</textarea>
+					</div>
+					<!---<div class="split-border" style="width: 3px; height: 100%;">   </div>---!>
+					<div class="recipe-display-instructions-div">
+						<textarea id="recipe-display-instructions-textarea" readonly>Instructions</textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
